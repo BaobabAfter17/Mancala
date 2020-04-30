@@ -62,3 +62,14 @@ class Mancala
     puts " 1   2   3   4   5   6"
   end
 end
+
+if __FILE__ == $PROGRAM_NAME
+  puts "Enter player1 name:"
+  print ">"
+  name1 = gets.chomp
+  puts "Enter player2 name:"
+  print ">"
+  name2 = gets.chomp
+  game = Mancala.new(name1, name2)
+  game.play
+end
